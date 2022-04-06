@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Team A"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="22sp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/team_a_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="22sp"
+        android:padding="10dp"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="15dp"
+        android:text="+3 Points"
+        android:backgroundTint="#fa8100"
+        android:onClick="points3TeamA"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="15dp"
+        android:text="+2 Points"
+        android:backgroundTint="#fa8100"
+        android:onClick="points2TeamA"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:text="Free Throw"
+        android:backgroundTint="#fa8100"
+        android:onClick="freeThrowTeamA"
+        tools:ignore="UsingOnClickInXml" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Team B"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textSize="22sp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/team_b_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="22sp"
+            android:padding="10dp"
+            android:gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="15dp"
+            android:text="+3 Points"
+            android:backgroundTint="#dd0074"
+            android:onClick="points3TeamB"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="15dp"
+            android:text="+2 Points"
+            android:backgroundTint="#dd0074"
+            android:onClick="points2TeamB"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:text="Free Throw"
+            android:backgroundTint="#dd0074"
+            android:onClick="freeThrowTeamB"
+            tools:ignore="UsingOnClickInXml" />
+
+    </LinearLayout>
+
+</LinearLayout>
