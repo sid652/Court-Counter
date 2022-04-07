@@ -1,5 +1,5 @@
 
-Court Counter
+**Court Counter**
 
 This is a very simple UI based app that counts the score of a basketball match between two teams.
 
